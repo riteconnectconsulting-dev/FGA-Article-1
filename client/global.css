@@ -1,0 +1,155 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Libre+Franklin:wght@600;700;800&display=swap");
+
+@import "tailwindcss";
+
+/* Theme, content globs, and plugins are declared in tailwind.config.ts. */
+@config "../tailwind.config.ts";
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 25% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 13%;
+
+    --primary: 211 80% 30%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 30% 96%;
+    --secondary-foreground: 217 68% 15%;
+
+    --muted: 210 25% 96%;
+    --muted-foreground: 217 12% 42%;
+
+    --accent: 5 82% 47%;
+    --accent-foreground: 220 30% 10%;
+
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 5 82% 47%;
+
+    --radius: 0.75rem;
+
+    /* FGA brand tokens */
+    --navy: 211 80% 30%;
+    --navy-dark: 215 80% 14%;
+    --navy-light: 211 68% 42%;
+    --gold: 5 82% 47%;
+    --gold-light: 5 82% 58%;
+    --charcoal: 220 25% 13%;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 72% 9%;
+    --foreground: 210 40% 98%;
+
+    --card: 217 60% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 217 60% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 43 68% 51%;
+    --primary-foreground: 220 30% 10%;
+
+    --secondary: 216 45% 20%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 216 45% 18%;
+    --muted-foreground: 215 20% 70%;
+
+    --accent: 5 82% 47%;
+    --accent-foreground: 220 30% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 216 40% 20%;
+    --input: 216 40% 20%;
+    --ring: 5 82% 47%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Libre Franklin", "Inter", ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  pre,
+  code {
+    overflow-x: auto;
+    white-space: pre;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-grid-pattern {
+    background-image:
+      linear-gradient(hsl(var(--gold) / 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--gold) / 0.08) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+}

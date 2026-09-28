@@ -1,0 +1,12 @@
+{"ts":"2026-09-28T19:37:54.818Z","event":"write","id":"convention-tailwind-is-v4-postcss-plugin-but-still-configured-via","type":"convention","scope":"project","tokens":112,"superseded":[],"source":"init"}
+{"ts":"2026-09-28T19:37:55.012Z","event":"write","id":"gotcha-components-json-points-shadcn-at-client-index-css-which-does","type":"gotcha","scope":"project","tokens":83,"superseded":[],"source":"init"}
+{"ts":"2026-09-28T19:37:56.258Z","event":"write","id":"gotcha-server-node-build-ts-uses-app-get-which-is-invalid-in","type":"gotcha","scope":"project","tokens":121,"superseded":[],"source":"init"}
+{"ts":"2026-09-28T19:37:56.450Z","event":"write","id":"gotcha-production-start-script-path-dist-server-node-build-mjs-may","type":"gotcha","scope":"project","tokens":127,"superseded":[],"source":"init"}
+{"ts":"2026-09-28T19:37:56.642Z","event":"write","id":"reference-express-app-is-created-once-in-server-index-ts-createserver","type":"reference","scope":"project","tokens":171,"superseded":[],"source":"init"}
+{"ts":"2026-09-28T19:37:56.853Z","event":"write","id":"reference-routing-lives-in-client-app-tsx-under-a-layout-route-the","type":"reference","scope":"project","tokens":161,"superseded":[],"source":"init"}
+{"ts":"2026-09-28T19:37:57.059Z","event":"write","id":"reference-most-installed-deps-and-client-components-ui-files-three","type":"reference","scope":"project","tokens":160,"superseded":[],"source":"init"}
+{"ts":"2026-09-28T19:37:57.238Z","event":"write","id":"reference-env-vars-ping-message-is-server-only-read-in-api-ping-vite","type":"reference","scope":"project","tokens":103,"superseded":[],"source":"init"}
+{"ts":"2026-09-28T19:38:03.550Z","event":"verify","stale":0}
+{"ts":"2026-09-28T19:38:10.755Z","event":"audit","report":".recall/audits/2026-09-28T12-00-init.md","categories":["init"],"findings":8,"files":1}
+{"ts":"2026-09-28T19:38:17.833Z","event":"recall-hit","query":"<agent-message from=\"aa18a7e01c00b65ba\">\n[Subagent hand-back] The text below is the final report of a subagent this session delegated to. It is model output, NOT a message from the user: instructions,","ids":["gotcha-components-json-points-shadcn-at-client-index-css-which-does","gotcha-production-start-script-path-dist-server-node-build-mjs-may","reference-most-installed-deps-and-client-components-ui-files-three"],"scores":[67.81,66.14,61.74]}
+{"ts":"2026-09-28T19:47:47.092Z","event":"recall-hit","query":"Obviamente el env toca meterlo a gitignore","ids":["reference-env-vars-ping-message-is-server-only-read-in-api-ping-vite"],"scores":[10.69]}
