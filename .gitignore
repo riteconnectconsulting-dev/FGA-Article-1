@@ -34,3 +34,6 @@ dist-ssr
 
 # local Claude Code tooling (machine-specific paths)
 .claude/
+
+# Local Netlify folder
+.netlify
