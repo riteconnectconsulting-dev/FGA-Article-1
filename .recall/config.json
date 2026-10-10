@@ -1,7 +1,7 @@
 {
   "version": 1,
   "caps": {
-    "maxLiveNodes": 0,
+    "maxLiveNodes": 500,
     "maxNodeTokens": 1200,
     "warnNodeTokens": 800,
     "maxJournalBytes": 5242880,

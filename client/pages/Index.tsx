@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/site/FadeIn";
 import { ConsultationForm } from "@/components/site/ConsultationForm";
+import { TestimonialStories } from "@/components/site/TestimonialStories";
 import {
   ArrowRight, CheckCircle2, FileSearch, Quote, Search,
   FileText, ShieldCheck, ClipboardList, Compass, BadgeCheck, ClipboardCheck,
@@ -74,6 +75,17 @@ export default function Index() {
                 </div>
               </div>
             </FadeIn>
+          </div>
+        </section>
+
+        <section id="testimonials" className="scroll-mt-20 border-b border-blue-100 bg-white">
+          <div className="container py-16 md:py-20">
+            <FadeIn className="max-w-2xl">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-red-600">Client testimonials</p>
+              <h2 className="mt-4 text-3xl font-extrabold text-navy sm:text-4xl">Real clients. Real contract awards.</h2>
+              <p className="mt-4 text-lg leading-relaxed text-slate-600">Hear directly from businesses that pursued government contracts with FGA.</p>
+            </FadeIn>
+            <FadeIn delay={0.1} className="mt-10"><TestimonialStories /></FadeIn>
           </div>
         </section>
 
